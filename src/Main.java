@@ -14,6 +14,12 @@ public class Main {
     // Div
     public static double div(double i, double j){
         double div = i/j;
+        try {
+            System.out.println(i / j);
+        }
+        catch (ArithmeticException e) {
+            System.out.println("Divided by zero operation cannot possible");
+        }
     return div;
     }
     public static double mul(double i, double j){
@@ -71,5 +77,4 @@ public class Main {
 
 }
 
-        System.out.println("Ready to Calculate");
-    }
+
